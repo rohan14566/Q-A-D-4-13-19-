@@ -1,0 +1,124 @@
+.b3n{
+    width: 200px;
+    height: 60px;
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 25px;
+    color: white;
+}
+b{
+    font-size: 18px;
+}
+.para{
+    font-family: 'Rubik Marker Hatch', cursive;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 10px;
+    position: relative;
+    transition:all;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    transition-timing-function: linear;
+}
+.box:hover{
+    width: 200px;
+    background-color: aqua;
+    
+}
+.circle{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+.media1{
+    display: flex;
+    float:right;
+}  
+.media{
+    width: 300px;
+    height: 200px;
+    background-color: aqua;
+    color: black;
+}
+.animation{
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: blueviolet;
+    animation:rohan 5s linear 2s infinite alternate-reverse;
+}
+    @keyframes rohan {
+        0%{
+            top: 0;
+            left: 0;
+        }
+        25%{
+            left: 100px;
+            top:0;
+        }
+        50%{
+            left: 100px;
+            top: 100px;
+        }
+        75%{
+            left: 0;
+            top: 100px;
+        }
+        100%{
+            left: 0;
+            top: 0;
+        }
+        
+    }
+@media  (max-width:500px) {
+    body{
+        height: 1500px;
+    }
+    .para{
+        margin-left: 20px;
+        display: block;
+    }
+    h3{
+        margin-right: 20px;
+    }
+    .box{
+        margin-left: 20px;
+        display: block;
+    
+    }
+    .box:hover{
+        margin-left: 20px;
+        width: 200px;
+        background-color: aqua;
+        
+    }
+    .circle{
+        margin-left: 20px;
+        background-color: palevioletred
+    }
+    .media1{
+        position: relative;
+        right: 220px;
+        top: 250px;
+    }  
+    .media{
+        padding: 20px;
+        text-align: center;
+        margin-left: 20px;
+        width: 250px;
+        height: auto;
+        display: block;
+        background-color:antiquewhite;
+    }
+
+.animation{
+
+    margin-top:300px ;
+    margin-left: 20px;
+}  
+}
